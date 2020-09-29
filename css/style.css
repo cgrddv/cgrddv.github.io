@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 90%;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.fill-width{
+    width: 100%;
+}
+.bold{
+    font-weight: bold;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.left{
+    float: left!important;
+}
+.right{
+    float: right!important;
+}
+.flex{
+    display: flex;
+}
+.flex-v-center{
+    align-items: center;
+}
+.flex1{
+    flex: 1;
+}
+.top-info{
+    height: 70px;
+    margin-bottom: 10px;
+}
+.top-info .img-100{
+    height: 70px;
+}
+nav{
+    overflow: hidden;
+    background: #34C7BE;
+    height: 70px;
+    padding: 20px 40px 10px;
+    font-size: 20px;
+    color: white;
+}
+nav li{
+    float: left;
+}
+.nav-item{
+    font-weight: bold;
+    margin-right: 20px;
+}
+nav .sign{
+    float: right;
+    font-size: 15px;
+    margin-top: 5px;
+}
+nav .sign span{
+    border: 1px solid white;
+    padding: 2px 40px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.home section{
+    margin-bottom: 10px;
+}
+/* 课程 */
+.classes{
+    padding: 20px;
+    background: #EDEFF2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+.class-card{
+    width: 30%;
+    background: white;
+    margin-bottom: 30px;
+}
+.class-card img{
+    width: 100%;
+}
+.class-card div{
+    padding: 5px 10px;
+}
+.class-card .bold{
+    font-size: 20px;
+}
+.class-card .sub{
+    font-size: 17px;
+    margin: 10px 0;
+    color: #999;
+}
+
+
+
+
+
+
+footer{
+    text-align: center;
+}
