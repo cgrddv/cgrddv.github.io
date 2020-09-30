@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 body {
-    width: 90%;
+    min-width: 1288px;
     margin: auto;
     padding-top: 5px;
     padding-bottom: 10px;
+}
+html{
+    font-size: 10px;
 }
 li{
     list-style: none;
@@ -21,6 +24,9 @@ a{
 }
 .bold{
     font-weight: bold;
+}
+.bg-red{
+    background: #EB2745;
 }
 .text-left{
     text-align: left;
@@ -53,45 +59,123 @@ a{
 .top-info .img-100{
     height: 70px;
 }
+/* -------------------------------------------------- 导航部分 */
 nav{
-    overflow: hidden;
-    background: #34C7BE;
     height: 70px;
-    padding: 20px 40px 10px;
+    background: #34C7BE;
+    padding: 0 40px;
     font-size: 20px;
     color: white;
 }
 nav li{
+    text-align: center;
     float: left;
 }
 .nav-item{
+    display: inline-block;
+    font-size: 14px;
+    padding: 25px;
     font-weight: bold;
-    margin-right: 20px;
 }
 nav .sign{
     float: right;
     font-size: 15px;
-    margin-top: 5px;
+    padding: 25px;
 }
 nav .sign span{
+    display: inline-block;
     border: 1px solid white;
     padding: 2px 40px;
-    margin-left: 20px;
     border-radius: 20px;
 }
+nav .bg-red{
+    width: 240px;
+    position: relative;
+}
+.header-class-item{
+    position: relative;
+}
+.header-class-item:hover .header-class{
+    display: block;
+}
+.header-class{
+    position: absolute;
+    top: 70px;
+    width: 240px;
+    /* overflow: auto; */
+    height: 360px;
+    line-height: 30px;
+    text-align: left;
+    color: #333333;
+    font-size: 12px;
+    background: #e1e1e1;
+    display: none;
+
+}
+.header-class dd{
+    padding: 20px;
+    border-bottom: 1px solid #ffffff;
+    color: #333333;
+}
+.header-class dd:hover{
+    background: #f5f5f5;
+}
+.header-class dd:hover .header-class-more{
+    display: block;
+}
+.header-class-more{
+    position: absolute;
+    top: 0;
+    left: 240px;
+    width: 960px;
+    height: 360px;
+    overflow: auto;
+    padding: 20px;
+    background: #f5f5f5;
+    display: none;
+}
+.header-class-more-title{
+    line-height: 20px;
+    padding-left: 5px;
+    font-size: 18px;
+    border-left: 4px solid #f12c3e;
+}
+.am-margin-bottom{
+    margin-bottom: 1.6rem;
+}
+.header-class-more .classes{
+    background: inherit;
+    padding: 0;
+    justify-content: unset;
+}
+.header-class-more .class-card{
+    width: 30%;
+    height: inherit;
+    margin-right: 25px;
+}
+.header-class-more .class-card>div{
+    height: 80px;
+}
+
+
+
+
+
+/* ----------------------------------首页样式 ------------------------------------ */
 .home section{
     margin-bottom: 10px;
 }
 /* 课程 */
 .classes{
-    padding: 20px;
+    padding: 20px 100px;
     background: #EDEFF2;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around
 }
 .class-card{
-    width: 30%;
+    width: 340px;
+    height: 370px;
     background: white;
     margin-bottom: 30px;
 }
@@ -99,10 +183,14 @@ nav .sign span{
     width: 100%;
 }
 .class-card div{
-    padding: 5px 10px;
+    padding: 10px;
 }
 .class-card .bold{
-    font-size: 20px;
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+    font-weight: 500;
+    transition: all .3s;
 }
 .class-card .sub{
     font-size: 17px;
@@ -116,5 +204,6 @@ nav .sign span{
 
 
 footer{
+    font-size: 15px;
     text-align: center;
 }
