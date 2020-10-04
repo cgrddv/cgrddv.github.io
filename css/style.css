@@ -102,8 +102,11 @@ nav li{
 .nav-item{
     display: inline-block;
     font-size: 14px;
-    padding: 26px;
+    padding: 25px;
     font-weight: bold;
+}
+.teach-class-nav li:nth-child(3){
+    background: #33B4F5;
 }
 nav .sign{
     float: right;
@@ -234,7 +237,7 @@ nav .bg-red{
     position: relative;
     top: 5px;
 }
-.step-arrow span:first-child{
+.step-arrow span{
     font-size: 17px;
     width: 70px;
     height: 50px;
@@ -242,18 +245,18 @@ nav .bg-red{
     background: #E1262C;
     font-weight: bold;
     color: white;
+    position: relative;
+    margin-right: 20px;
 }
-.step-arrow span:last-child{
-    display: inline-block;
-    height: 41px;
-}
-.step-arrow span:last-child::after{
+.step-arrow span::after{
     content: "";
     border: 0 solid transparent;
     border-width: 25px 30px;
     border-left-color: #E1262C;
     border-right-width: 0;
-    display: block;
+    position: absolute;
+    top: 0%;
+    left: 100%;
 }
 .home-hotline{
     font-size: 22px;
@@ -391,8 +394,11 @@ nav .bg-red{
 
 
 footer{
+    padding: 25px;
+    margin-top: 10px;
     font-size: 15px;
     text-align: center;
+    background-color: #F6F5F5;
 }
 
 .float-menu{
